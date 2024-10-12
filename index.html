@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-mode">
+    <div class="container">
+        <!-- Botones de modo noche/día y idioma -->
+        <button id="toggle-theme" class="settings-button">🌞</button>
+        <button id="toggle-lang" class="settings-button">ES</button>
+        
+        <h1 id="title">Currency Converter</h1>
+        <form id="converter-form">
+            <div>
+                <label for="amount" id="label-amount">Amount</label>
+                <input type="number" id="amount" placeholder="Enter amount" required>
+            </div>
+            <div>
+                <label for="from-currency" id="label-from">From</label>
+                <select id="from-currency"></select>
+            </div>
+            <div>
+                <label for="to-currency" id="label-to">To</label>
+                <select id="to-currency"></select>
+            </div>
+            <button type="submit" id="convert-button">Convert</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
